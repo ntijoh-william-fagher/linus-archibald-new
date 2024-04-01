@@ -1,0 +1,64 @@
+.portrait-section-text-contianer {
+  box-sizing: border-box;
+  width: 50%;
+  height: 100%;
+}
+
+.portrait-text-container {
+  /* background-color: #002148ff; */
+  color: #fff;
+  padding: 0px 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 2%;
+}
+
+.portrait-text-container > div {
+  background-color: #00163188;
+  /* border: 10px solid red; */
+  color: #fff;
+  padding: 3%;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-around; */
+}
+
+.portrait-text-header {
+  background-color: rgba(0, 32, 72, 0);
+  /* border: 10px solid red; */
+}
+
+#arrow {
+  width: 50px;
+  padding: 10px;
+  position: relative;
+  right: 0px;
+}
+
+.h3olink {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .portrait-text-container {
+    padding: 0px 2%;
+    /* position: absolute; */
+    /* width: 50%; */
+    /* height: 300px; */
+  }
+  .portrait-section-text-contianer {
+    box-sizing: border-box;
+    /* height: 100%; */
+  }
+
+  .portrait-text-container > div {
+    background-color: #00163188;
+    color: #fff;
+  }
+
+  .portrait-text-header {
+    font-size: 25px;
+  }
+}

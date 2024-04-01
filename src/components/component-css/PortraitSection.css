@@ -1,0 +1,35 @@
+.portrait-section {
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-between;
+  width: 100%;
+  height: 120%;
+  padding: 2% 0;
+}
+
+.portrait-section > div {
+  box-sizing: border-box;
+  width: 50%;
+  height: 100%;
+}
+
+.portrait-is-reversed-true {
+  flex-direction: row-reverse;
+}
+.portrait-is-reversed-false {
+  flex-direction: row;
+}
+
+@media (max-width: 768px) {
+  .portrait-section {
+    height: 200%;
+    flex-direction: column;
+  }
+
+  .portrait-section > div {
+    box-sizing: border-box;
+    width: 100%;
+    gap: 20px;
+    /* height: 50%; */
+  }
+}

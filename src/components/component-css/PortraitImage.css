@@ -1,0 +1,24 @@
+.portrait-section-image {
+  height: 100%;
+  object-fit: cover;
+}
+
+.portrait-section-image-contianer {
+  box-sizing: border-box;
+  /* width: 50%; */
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .portrait-section-image-contianer {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+  }
+  .portrait-section-image {
+    width: 100%;
+    /* height: 50%; */
+    /* height: 100%; */
+    /* object-fit: fill; */
+  }
+}

@@ -1,0 +1,82 @@
+#mobile-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px; /* Adjust based on your design */
+  display: flex;
+  justify-content: space-between; /* Adjust this as per your layout needs */
+  align-items: center;
+  padding: 0 10px; /* Adjust padding for mobile-navbar content */
+  z-index: 1000; /* Keep it on top */
+  background: transparent; /* or any color you prefer without introducing extra spacing */
+}
+
+#mobile-menuToggle {
+  position: relative;
+  z-index: 2;
+  margin-left: auto; /* Moves the toggle to the right */
+  width: 40px; /* Adjust the width as per the size of the hamburger icon */
+  height: 25px; /* Adjust the height as per the size of the hamburger icon */
+  top: 50%;
+  right: 13%;
+}
+
+#mobile-menuToggle input {
+  opacity: 0;
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+#mobile-menuToggle span {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #cdcdcd;
+  border-radius: 3px;
+  z-index: 1000;
+}
+
+/* Position the spans to create the hamburger lines */
+#mobile-menuToggle span:nth-child(2) {
+  top: 0;
+}
+
+#mobile-menuToggle span:nth-child(3) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#mobile-menuToggle span:nth-child(4) {
+  bottom: 0;
+}
+
+#mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background: #222327ff;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px; /* Start the menu content below the navbar */
+}
+
+#mobile-menuToggle input:checked ~ #mobile-menu {
+  transform: translateX(0);
+}
+
+#mobile-menu a {
+  padding: 20px;
+  font-size: 25px;
+  color: #fff; /* Ensure links are visible against the menu background */
+  text-decoration: none;
+}

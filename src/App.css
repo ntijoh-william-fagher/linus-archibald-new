@@ -1,0 +1,142 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: white;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 700;
+  padding-bottom: 25px;
+}
+
+h2 {
+  font-size: 80px;
+  font-weight: 200;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+.Paralax-container {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px;
+  box-sizing: border-box;
+  /* background-color: #fff; */
+}
+
+.top-name-container {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1%;
+}
+
+.top-name-container > h1 {
+  font-family: "piepie", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 100px;
+
+  color: #dddcd8ff;
+  /* background-color: rgba(0, 0, 0, 0.6); */
+
+  padding: 10px 30px 30px 30px;
+}
+
+.background {
+  transform: translateZ(-4px) scale(1.5);
+  position: relative;
+}
+
+.foreground {
+  transform: translateZ(0px) scale(1);
+  height: 600px;
+  box-sizing: border-box;
+  background-color: #dddcd8ff;
+}
+
+.section-container {
+  box-sizing: border-box;
+  color: #002148ff;
+  z-index: -1;
+  display: flex;
+}
+
+.linusHeader {
+  font-size: 200px;
+}
+
+.isInverted {
+  background-color: #dddcd8ff;
+  color: #002148ff;
+  /* background-color: #002148ff;
+    color: #DDDCD8ff; */
+}
+
+.image-free {
+  padding: 20px 250px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.background > img {
+  height: 92vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 25px;
+  }
+
+  h2 {
+    font-size: 40px;
+    font-weight: 200;
+  }
+
+  h3 {
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  h4 {
+    font-size: 20px;
+    font-weight: 200;
+  }
+
+  .top-name-container > h1 {
+    font-size: 60px;
+  }
+
+  .image-free {
+    padding: 20px 20px;
+  }
+
+  .section-creator-header {
+    font-size: 40px;
+  }
+}

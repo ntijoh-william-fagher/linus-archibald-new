@@ -1,0 +1,120 @@
+.contact-us {
+  background-color: #002148ff;
+  width: 100vw;
+  padding: 3% 20%;
+  box-sizing: border-box;
+  appearance: none;
+  border: none;
+}
+
+.contact-us > div {
+  width: 50%;
+}
+
+.contact-us h1 {
+  padding: 50px 0px;
+  font-size: 45px;
+  font-weight: 300;
+  color: white;
+  text-align: center;
+}
+
+.contact-box,
+.contact-box-big {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.contact-box {
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.contact-box-big {
+  height: 200px;
+  margin-bottom: 20px;
+}
+.contact-form > div > input:focus {
+  outline: none;
+  box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.3);
+  background-color: #ffffffcc !important;
+}
+.contact-box::placeholder,
+.contact-box-big::placeholder {
+  color: black;
+  padding-left: 30px;
+  font-size: 18px;
+}
+
+.contact-submit {
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+  border: 0px transparent;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  transition: 0.15s ease-in-out;
+}
+
+#contact-info-details {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  /* background-color: #002148ff; */
+  background-color: rgba(0, 0, 0, 1);
+  color: white;
+  /* border-bottom: 30px solid #002148ff; */
+  height: 50px;
+}
+
+.copyright {
+  /* background-color: #00214855; */
+  background-color: rgba(0, 0, 0, 1);
+  color: grey;
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .contact-us h1 {
+    padding-bottom: 50px;
+    font-size: 35px;
+    word-spacing: 8px;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  .contact-us {
+    padding: 0% 7% 10% 7%;
+    box-sizing: border-box;
+    appearance: none;
+  }
+
+  #contact-info-details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #002148ff;
+    color: white;
+    border-bottom: 30px solid #002148ff;
+    height: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .contact-spacer {
+    display: none;
+  }
+}

@@ -1,0 +1,13 @@
+.about-me-section{
+    color: #222327ff;
+    background-color: #DDDCD8ff;
+    border-top: 50px solid #DDDCD8ff;
+    border-bottom: 50px solid #DDDCD8ff;
+}
+
+#about-me-header > h1{
+    color: #222327ff;
+}
+.about-me-section > h1{
+    color: #222327ff;
+}

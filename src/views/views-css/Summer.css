@@ -1,0 +1,10 @@
+.summer-section{
+    color: #DDDCD8ff;
+    background-color: #252c21;
+    border-top: 50px solid #252c21;
+    border-bottom: 50px solid #252c21;
+}
+
+#summer-header > h1{
+    color: #DDDCD8ff;
+}
