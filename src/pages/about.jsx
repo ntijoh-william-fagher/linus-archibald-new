@@ -64,7 +64,6 @@ export default function About() {
         ]}
       />
       <SectionCreator img={greyGod} className={"about-section"} />
-      {/* <Footer importerClassName={"about-me-section"} /> */}
     </>
   );
 }

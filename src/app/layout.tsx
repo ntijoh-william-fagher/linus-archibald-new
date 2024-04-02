@@ -4,8 +4,6 @@ import "../../public/css/globals.css";
 import "../../public/css/App.css";
 import JoinedNavbar from "@/components/JoinedNavbar";
 import Footer from "@/components/Footer";
-// import "../../public/css/App.css";
-// import "../index.css";
 
 const inter = Inter({ subsets: ["latin"] });
 

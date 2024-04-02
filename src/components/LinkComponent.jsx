@@ -6,11 +6,10 @@ import arrow from "../../public/images/arrow.png";
 export default function LinkComponent({ linkDestination, linkText }) {
   return (
     <div>
-      {/* <Link to={`/${linkDestination}`} className={linkDestination}>
+      <Link href={`/${linkDestination}`} className={linkDestination}>
         <h3>{linkText}</h3>
         <Image src={arrow} alt="" id="arrow" />
-      </Link> */}
-      {/* <h2>this is a link</h2> */}
+      </Link>
     </div>
   );
 }
