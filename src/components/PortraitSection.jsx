@@ -1,6 +1,6 @@
-import "./component-css/PortraitSection.css";
-import "./component-css/PortraitImage.css";
-import "./component-css/PortraitText.css";
+import "../../public/css/component-css/PortraitSection.css";
+import "../../public/css/component-css/PortraitImage.css";
+import "../../public/css/component-css/PortraitText.css";
 import PortraitImage from "./PortraitImage";
 import PortraitText from "./PortraitText";
 

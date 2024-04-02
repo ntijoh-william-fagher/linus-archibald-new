@@ -1,4 +1,9 @@
 import React from "react";
+import Image from "next/image";
+
+import "../../public/css/component-css/PortraitSection.css";
+import "../../public/css/component-css/PortraitImage.css";
+import "../../public/css/component-css/PortraitText.css";
 
 export default function SectionCreator({
   sectionClass,
@@ -26,7 +31,7 @@ export default function SectionCreator({
 
   return (
     <div className={`section-container background ${sectionClass}`} id={id}>
-      <img src={img} alt="" />
+      <Image src={img} alt="" />
     </div>
   );
 }

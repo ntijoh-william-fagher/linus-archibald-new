@@ -1,21 +1,18 @@
 import React from "react";
-import "../App.css";
-import "../views/views-css/About.css";
+import "../../public/css/App.css";
+import "../../public/css/views-css/About.css";
 import Footer from "../components/Footer";
 import SectionCreator from "../components/SectionCreator";
-import PortraitImage from "../components/PortraitImage";
 import PortraitSection from "../components/PortraitSection";
-import linusLight2 from "../images/linus-19.jpg";
-import linusDark from "../images/linus-6.jpg";
-import bigMountain from "../images/linus-11.jpg";
-import hercules from "../images/sommar2/hercules.jpg";
-import horisont2 from "../images/sommar2/horisont2.jpg";
-import linus3 from "../images/linus-3.jpg";
-import greyGod from "../images/sommar2/gud2.jpg";
+import linusDark from "../../public/images/linus-6.jpg";
+import hercules from "../../public/images/sommar2/hercules.jpg";
+import horisont2 from "../../public/images/sommar2/horisont2.jpg";
+import greyGod from "../../public/images/sommar2/gud2.jpg";
+import JoinedNavbar from "@/components/JoinedNavbar";
 
 export default function About() {
   return (
-    <div className="Paralax-container">
+    <>
       <div className="top-name-container" id="about-me-header">
         <h1>About Me</h1>
       </div>
@@ -67,7 +64,12 @@ export default function About() {
         ]}
       />
       <SectionCreator img={greyGod} className={"about-section"} />
-      <Footer importerClassName={"about-me-section"} />
-    </div>
+      {/* <Footer importerClassName={"about-me-section"} /> */}
+    </>
   );
 }
+// export async function getServerSideProps() {
+//   return {
+//     props: {}, // Return an empty object to disable SSR
+//   };
+// }

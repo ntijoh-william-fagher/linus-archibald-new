@@ -1,5 +1,9 @@
 import React from "react";
-import "./component-css/PortraitText.css";
+import "../../public/css/component-css/PortraitText.css";
+
+import "../../public/css/component-css/PortraitSection.css";
+import "../../public/css/component-css/PortraitImage.css";
+import "../../public/css/component-css/PortraitText.css";
 
 import LinkComponent from "./LinkComponent";
 

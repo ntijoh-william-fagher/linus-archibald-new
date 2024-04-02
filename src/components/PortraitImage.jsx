@@ -1,10 +1,11 @@
 import React from "react";
-import "./component-css/PortraitImage.css";
+import Image from "next/image";
+import "../../public/css/component-css/PortraitImage.css";
 
 export default function PortraitImage({ imgSrc, altText }) {
   return (
     <div className="portrait-section-image-contianer">
-      <img src={imgSrc} alt={altText} className="portrait-section-image" />
+      <Image src={imgSrc} alt={altText} />
     </div>
   );
 }

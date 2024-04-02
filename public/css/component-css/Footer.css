@@ -1,5 +1,6 @@
 .contact-us {
-  background-color: #002148ff;
+  /* background-color: #002148ff; */
+  background-color: rgb(21, 21, 21);
   width: 100vw;
   padding: 3% 20%;
   box-sizing: border-box;

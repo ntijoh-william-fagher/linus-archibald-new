@@ -1,5 +1,6 @@
-.portrait-section-image {
+.portrait-section-image-contianer > img {
   height: 100%;
+  width: 100%;
   object-fit: cover;
 }
 
@@ -15,7 +16,7 @@
     width: 100%;
     height: 100%;
   }
-  .portrait-section-image {
+  .portrait-section-image-contianer > img {
     width: 100%;
     /* height: 50%; */
     /* height: 100%; */

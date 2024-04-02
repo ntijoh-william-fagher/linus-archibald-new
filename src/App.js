@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
-import "./App.css";
+import "../public/css";
 import Start from "./views/Start";
 import Summer from "./views/Summer";
 import Winter from "./views/Winter";
 import About from "./views/About";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import NavbarMobile from "./components/NavbarMobile";
+import Navbar from "./componentsNew/Navbar";
+import NavbarMobile from "./componentsNew/NavbarMobile";
 
 export default function App() {
   // State to track window width

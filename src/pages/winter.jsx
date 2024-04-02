@@ -1,26 +1,26 @@
 import React from "react";
-import "../App.css";
-import "../views/views-css/Summer.css";
+import "../../public/css/App.css";
+import "../../public/css/views-css/Winter.css";
 import Footer from "../components/Footer";
 import SectionCreator from "../components/SectionCreator";
 import PortraitSection from "../components/PortraitSection";
-import golf from "../images/sommar2/golf.jpg";
-import hahnen from "../images/sommar2/hahnen.jpg";
-import hogt from "../images/sommar2/hogt.jpg";
-import gud from "../images/sommar2/gud.jpg";
+import linusLight2 from "../../public/images/linus-19.jpg";
+import bigMountain from "../../public/images/linus-11.jpg";
+import kletter2 from "../../public/images/sommar2/kletter2.jpg";
+import linus8 from "../../public/images/linus-8.jpg";
 
-export default function Summer() {
+export default function Winter() {
   return (
-    <div className="Paralax-container">
-      <div className="top-name-container" id="summer-header">
-        <h1>Summer Activities</h1>
+    <>
+      <div className="top-name-container" id="winter-header">
+        <h1>Winter Activities</h1>
       </div>
-      <SectionCreator img={hogt} className={"summer-section"} />
+      <SectionCreator img={linusLight2} />
       <PortraitSection
-        imgSrc={golf}
+        imgSrc={linus8}
         altText={""}
         isInverted={false}
-        importedClass={"summer-section"}
+        importedClass={"start-section"}
         textContainer={[
           {
             header: "Freeride guiding in Engelberg,",
@@ -35,10 +35,10 @@ export default function Summer() {
         ]}
       />
       <PortraitSection
-        imgSrc={hahnen}
+        imgSrc={kletter2}
         altText={""}
         isInverted={true}
-        importedClass={"summer-section"}
+        importedClass={"start-section"}
         textContainer={[
           {
             header: "Ski touring course. For everyone!",
@@ -52,9 +52,13 @@ export default function Summer() {
           },
         ]}
       />
-
-      <SectionCreator img={gud} className={"summer-section"} />
-      <Footer importerClassName={"summer-section"} />
-    </div>
+      <SectionCreator img={bigMountain} />
+      {/* <Footer importerClassName={"start-section"} /> */}
+    </>
   );
+}
+export async function getServerSideProps() {
+  return {
+    props: {}, // Return an empty object to disable SSR
+  };
 }

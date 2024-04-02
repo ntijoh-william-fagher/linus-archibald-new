@@ -1,20 +1,22 @@
+"use client";
 import React from "react";
 
-import SectionCreator from "../components/SectionCreator";
-import "../App.css";
-import "../views/views-css/Start.css";
-import Footer from "../components/Footer";
+import "../../public/css/App.css";
+import "../../public/css/views-css/Start.css";
 
+import Footer from "../components/Footer";
+import SectionCreator from "../components/SectionCreator";
 import PortraitSection from "../components/PortraitSection";
-import lightLandscape1 from "../images/linus-4.jpg";
-import linusThin from "../images/linus-15.jpg";
-import linusMiddle from "../images/linus-21-inverted.jpg";
-import linusStark from "../images/linus-stark.jpg";
-import golf from "../images/sommar2/golf.jpg";
+
+import lightLandscape1 from "../../public/images/linus-4.jpg";
+import linusThin from "../../public/images/linus-15.jpg";
+import linusMiddle from "../../public/images/linus-21-inverted.jpg";
+import linusStark from "../../public/images/linus-stark.jpg";
+import golf from "../../public/images/sommar2/golf.jpg";
 
 export default function Start() {
   return (
-    <div className="Paralax-container">
+    <div>
       <div className="top-name-container" id="start-header">
         <h1>Linus Archibald</h1>
       </div>
@@ -115,8 +117,12 @@ export default function Start() {
       />
 
       <SectionCreator img={lightLandscape1} />
-
-      <Footer importerClassName={"start-section"} />
+      {/* <Footer /> */}
     </div>
   );
+}
+export async function getServerSideProps() {
+  return {
+    props: {}, // Return an empty object to disable SSR
+  };
 }

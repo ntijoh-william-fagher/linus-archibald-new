@@ -1,6 +1,7 @@
-import "./component-css/Navbar.css";
-import { Link } from "react-router-dom";
-import React, { useState } from "react";
+// import "./component-css/Navbar.css";
+import "../../public/css/component-css/Navbar.css";
+import Link from "next/link";
+import React, { useState, useEffect } from "react";
 
 export default function Navbar() {
   const [isChecked, setIsChecked] = useState(false);
@@ -21,21 +22,31 @@ export default function Navbar() {
         <span></span>
         <span></span>
         <ul id="menu">
-          <Link to="/" className="start" onClick={closeMenu}>
-            Home
-          </Link>
-          <Link to="/winter" className="winter" onClick={closeMenu}>
-            Winter
-          </Link>
-          <Link to="/summer" className="summer" onClick={closeMenu}>
-            Summer
-          </Link>
-          <Link to="/about" className="about" onClick={closeMenu}>
-            About Me
-          </Link>
-          <a href="#contact" className="about" onClick={closeMenu}>
-            Contact
-          </a>
+          <li>
+            <Link href="/" className="start" onClick={closeMenu}>
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link href="/winter" className="winter" onClick={closeMenu}>
+              Winter
+            </Link>
+          </li>
+          <li>
+            <Link href="/summer" className="summer" onClick={closeMenu}>
+              Summer
+            </Link>
+          </li>
+          <li>
+            <Link href="/about" className="about" onClick={closeMenu}>
+              About Me
+            </Link>
+          </li>
+          <li>
+            <a href="#contact" className="about" onClick={closeMenu}>
+              Contact
+            </a>
+          </li>
         </ul>
       </div>
     </nav>

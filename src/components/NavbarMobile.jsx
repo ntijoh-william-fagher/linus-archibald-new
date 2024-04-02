@@ -1,6 +1,7 @@
-import "./component-css/NavbarMobile.css";
-import { Link } from "react-router-dom";
-import React, { useState } from "react";
+// import "./component-css/NavbarMobile.css";
+import "../../public/css/component-css/NavbarMobile.css";
+import Link from "next/link";
+import React, { useState, useEffect } from "react";
 
 export default function NavbarMobile() {
   const [isChecked, setIsChecked] = useState(false);
@@ -21,18 +22,26 @@ export default function NavbarMobile() {
         <span></span>
         <span></span>
         <ul id="mobile-menu">
-          <Link to="/" className="mobile-start" onClick={closeMenu}>
-            Home
-          </Link>
-          <Link to="/winter" className="mobile-winter" onClick={closeMenu}>
-            Winter
-          </Link>
-          <Link to="/summer" className="mobile-summer" onClick={closeMenu}>
-            Summer
-          </Link>
-          <Link to="/about" className="mobile-about" onClick={closeMenu}>
-            About Me
-          </Link>
+          <li>
+            <Link href="/" className="mobile-start" onClick={closeMenu}>
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link href="/winter" className="mobile-winter" onClick={closeMenu}>
+              Winter
+            </Link>
+          </li>
+          <li>
+            <Link href="/summer" className="mobile-summer" onClick={closeMenu}>
+              Summer
+            </Link>
+          </li>
+          <li>
+            <Link href="/about" className="mobile-about" onClick={closeMenu}>
+              About Me
+            </Link>
+          </li>
           <a href="#contact" className="mobile-contact" onClick={closeMenu}>
             Contact
           </a>

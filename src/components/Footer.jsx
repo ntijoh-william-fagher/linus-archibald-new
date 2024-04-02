@@ -1,5 +1,5 @@
 import React from "react";
-import "./component-css/Footer.css";
+import "../../public/css/component-css/Footer.css";
 export default function Footer({ importerClassName }) {
   const contactClassName = `contact-us${
     importerClassName ? ` ${importerClassName}` : ""
