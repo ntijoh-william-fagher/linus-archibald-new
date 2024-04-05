@@ -21,33 +21,23 @@ export default function Navbar() {
         <span></span>
         <span></span>
         <span></span>
-        <ul id="menu">
-          <li>
-            <Link href="/" className="start" onClick={closeMenu}>
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link href="/winter" className="winter" onClick={closeMenu}>
-              Winter
-            </Link>
-          </li>
-          <li>
-            <Link href="/summer" className="summer" onClick={closeMenu}>
-              Summer
-            </Link>
-          </li>
-          <li>
-            <Link href="/about" className="about" onClick={closeMenu}>
-              About Me
-            </Link>
-          </li>
-          <li>
-            <a href="#contact" className="about" onClick={closeMenu}>
-              Contact
-            </a>
-          </li>
-        </ul>
+        <div id="menu">
+          <Link href="/" className="start" onClick={closeMenu}>
+            Home
+          </Link>
+          <Link href="/winter" className="winter" onClick={closeMenu}>
+            Winter
+          </Link>
+          <Link href="/summer" className="summer" onClick={closeMenu}>
+            Summer
+          </Link>
+          <Link href="/about" className="about" onClick={closeMenu}>
+            About Me
+          </Link>
+          <a href="#contact" className="about" onClick={closeMenu}>
+            Contact
+          </a>
+        </div>
       </div>
     </nav>
   );

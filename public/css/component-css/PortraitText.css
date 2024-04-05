@@ -16,13 +16,29 @@
 
 .portrait-text-container > div {
   background-color: #00163188;
-  /* border: 10px solid red; */
+  border: 5px solid #50505099;
   color: #fff;
   padding: 3%;
+  margin: 3%;
+  border-radius: 10px;
+  /* gap: 3%; */
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-around; */
+
+  /* border: 10px solid red; */
+}
+
+.portrait-text-container > div:hover {
+  background-color: #00163188;
+  border: 5px solid white;
+  /* gap: 3%; */
   /* display: flex;
   flex-direction: column;
   justify-content: space-around; */
 }
+/* .hover-content {
+} */
 
 .portrait-text-header {
   background-color: rgba(0, 32, 72, 0);

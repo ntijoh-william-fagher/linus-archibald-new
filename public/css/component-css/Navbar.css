@@ -101,7 +101,7 @@
   height: 100vh;
   margin: -120px 0 0 -250px;
   padding: 50px;
-  padding-top: 70px;
+  padding-top: 80px;
 
   display: flex;
   flex-direction: column;
@@ -119,11 +119,18 @@
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 
-#menu > li > a {
-  padding: 20px 0;
+#menu > a {
+  /* padding: 20px 0; */
+  font-size: 25px;
+  height: 80px;
+  /* border: 10px solid red; */
+}
+
+#menu > a {
+  /* padding: 20px 0; */
   font-size: 25px;
 }
 
-#menuToggle input:checked ~ ul {
+#menuToggle input:checked ~ div {
   transform: none;
 }

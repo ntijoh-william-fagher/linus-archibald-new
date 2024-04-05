@@ -23,24 +23,6 @@ export default function Start() {
       <SectionCreator img={linusMiddle} />
 
       <PortraitSection
-        imgSrc={linusStark}
-        altText={""}
-        isInverted={true}
-        importedClass={"start-section"}
-        textContainer={[
-          {
-            header: "I came to Engelberg in 2007, ",
-            paragraph: `As a ski bum I have dedicated my life to skiing and mountain climbing. I love being out there—a mix of fresh air, silence, exercise, and beautiful mountains. After many years in my new home mountains, I'm still not tired of them.\n
-
-            Being able to take clients into the alpine environment, show them my secret spots and discover new places together inspires me. Giving customers the best possible mountain experience is not just my job, it's my passion!
-            `,
-          },
-        ]}
-        linkDestination="about"
-        linkText="Learn more about me"
-      />
-
-      <PortraitSection
         imgSrc={linusThin}
         altText={""}
         isInverted={false}
@@ -114,6 +96,23 @@ export default function Start() {
           },
         ]}
         linkDestination="summer"
+      />
+      <PortraitSection
+        imgSrc={linusStark}
+        altText={""}
+        isInverted={false}
+        importedClass={"start-section"}
+        textContainer={[
+          {
+            header: "I came to Engelberg in 2007, ",
+            paragraph: `As a ski bum I have dedicated my life to skiing and mountain climbing. I love being out there—a mix of fresh air, silence, exercise, and beautiful mountains. After many years in my new home mountains, I'm still not tired of them.\n
+
+            Being able to take clients into the alpine environment, show them my secret spots and discover new places together inspires me. Giving customers the best possible mountain experience is not just my job, it's my passion!
+            `,
+          },
+        ]}
+        linkDestination="about"
+        linkText="Learn more about me"
       />
 
       <SectionCreator img={lightLandscape1} />
